@@ -1,7 +1,8 @@
 A simple user defined function
 
 def mean(value):
-    if type(value) == dict:
+#    if isinstance(value,dict): # returns the same result as below if statement
+     if type(value) == dict:
         mean_form = sum(value.values())/len(value)
     else:
         mean_form= sum(value)/len(value)

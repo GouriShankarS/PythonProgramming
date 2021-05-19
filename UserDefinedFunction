@@ -1,0 +1,14 @@
+A simple user defined function
+
+def mean(value):
+    if type(value) == dict:
+        mean_form = sum(value.values())/len(value)
+    else:
+        mean_form= sum(value)/len(value)
+    return mean_form
+student_grades = {"Mike": 9.4,"Sam":9.1,"Katie":8.0}
+temperatures_daily = [25,20,29,14]
+print("Students Avg grades ", mean(student_grades))
+print("Daily average temperature", mean(temperatures_daily))
+
+
